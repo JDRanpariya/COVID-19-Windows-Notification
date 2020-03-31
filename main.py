@@ -12,7 +12,7 @@ def notify(title,message):
         app_icon = 'C://Users//Dell//Projects//Web_Scraping//Corona_Notification_Windows//corona.ico',
         #app_icon= None
         app_name = 'COVID-19 Report',
-        timeout = 7,
+        timeout = 15,
         
         )
 
