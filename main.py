@@ -30,7 +30,7 @@ if __name__ == "__main__":
     #print(data)
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer,'cp437','backslashreplace')
     soup = BeautifulSoup(data, 'html.parser')
-    soup.prettify()
+    soup.prettify()# No need of this you can directly inspect the webpage
     
     noofcases =soup.find_all("div",{'class' : 'maincounter-number'})[0].text
     noofdeaths = soup.find_all("div",{'class' : 'maincounter-number'})[1].text
